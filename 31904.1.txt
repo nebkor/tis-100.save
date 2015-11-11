@@ -1,0 +1,56 @@
+@0
+MOV RIGHT, RIGHT
+
+@1
+S:
+ SAV
+ MOV UP, ACC
+ MOV ACC, LEFT
+ MOV ACC, RIGHT
+ JEZ D
+ SWP
+ ADD LEFT
+ JMP S
+
+D:
+ SWP
+ MOV ACC, DOWN
+ MOV LEFT, ACC
+
+@2
+S:
+ SAV
+ MOV LEFT, ACC
+ JEZ D
+ SWP
+ ADD 1
+ JMP S
+
+D:
+ SWP
+ MOV ACC, DOWN
+ SWP
+
+@3
+
+
+@4
+MOV UP, DOWN
+
+@5
+MOV UP, DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, DOWN
+
+@9
+MOV UP, DOWN
+
+@10
+

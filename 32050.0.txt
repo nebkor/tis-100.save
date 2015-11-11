@@ -1,0 +1,46 @@
+@0
+
+
+@1
+MOV 0, DOWN
+
+S: MOV UP, ACC
+SUB UP
+JLZ NEGZ
+JMP END
+NEGZ: NEG
+ JMP END
+END: SUB 11
+JGZ WO
+MOV 0, DOWN
+JMP S
+
+WO: MOV 1, DOWN
+JMP S
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP, DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV UP, RIGHT
+
+@9
+MOV LEFT, DOWN
+
+@10
+

@@ -29,7 +29,7 @@ B: MOV LEFT, DOWN
 
 
 @5
-
+MOV UP, RIGHT
 
 @6
 MOV UP, DOWN
